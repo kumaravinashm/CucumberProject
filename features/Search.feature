@@ -13,4 +13,3 @@ Feature: Hello
     Then I will Enter password "tannupagla"
     When I will click "Login"
     Then Verify the user is "Kumar Avinash" or not
-
