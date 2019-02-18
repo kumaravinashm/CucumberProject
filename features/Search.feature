@@ -10,6 +10,5 @@ Feature: Hello
     Given I will visit Flipkart URL
     Then I will check title of the page should be "Online Shopping Site for Mobiles, Electronics, Furniture,"
     Then I will enter username "avinashnaa@gmail.com" And password as "tannupagla"
-    Then I will Enter password "tannupagla"
     When I will click "Login"
     Then Verify the user is "Kumar Avinash" or not

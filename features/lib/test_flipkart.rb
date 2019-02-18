@@ -19,16 +19,17 @@ class Flipkart_test
   end
 
   def enter_user(username , password)
-    if find(:xpath,"//input[@type='password']") == false
+    if find(:xpath,"/html/body/div[2]/div/div/div/div/div[2]/div/form/div[2]/button/span") == true
       first('._2zrpKA').set(username)
       find(:xpath, "//div[@class='_1avdGP']//button[@type='submit']").click
       find(:xpath,"//input[@type='password']").send_keys(password)
+      find(:xpath, "//div[@class='_1avdGP']//button[@type='submit']").click
+
     else
       first('._2zrpKA').set(username)
+      #find(:xpath, "//div[@class='_1avdGP']//button[@type='submit']").click
+      find(:xpath,"//input[@type='password']").send_keys(password)
     end
-  end
-  def enter_password(password)
-    find(:xpath,"//input[@type='password']").send_keys(password)
   end
 
   def click_login()
