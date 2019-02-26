@@ -8,6 +8,7 @@ class Flipkart_test
 
   def navigate
     visit 'http://www.flipkart.com'
+    #hello
     sleep 1
   end
 
